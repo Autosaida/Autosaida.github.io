@@ -24,6 +24,59 @@
         h3 {
             margin: 10px 0; 
         }
+        .paper-badge {
+            display: inline-block;
+            font-size: 0.72em;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-right: 8px;
+            letter-spacing: 0.02em;
+        }
+        .paper-badge-preprint {
+            color: #333;
+            background: #e8e8e8;
+            border: 1px solid #c4c4c4;
+            font-weight: 600;
+        }
+        .paper-badge-ccfa {
+            color: #fff;
+            background: #c62828;
+            border: 1px solid #8e0000;
+        }
+        section.research .research-list > li {
+            margin-bottom: 1.35em;
+        }
+        section.research .research-title-line {
+            line-height: 1.45;
+            margin-bottom: 0.2em;
+        }
+        section.research .research-title-line > strong {
+            color: #111;
+            font-weight: 700;
+        }
+        section.research a.paper-link {
+            color: #0645ad;
+            text-decoration: underline;
+            font-weight: normal;
+            margin-left: 0.15em;
+            white-space: nowrap;
+        }
+        section.research a.paper-link:visited {
+            color: #0b0080;
+        }
+        section.research .research-authors {
+            font-size: 0.95em;
+            line-height: 1.45;
+            margin: 0.15em 0 0.2em 0;
+        }
+        section.research .research-venue {
+            font-size: 0.88em;
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #333;
+            line-height: 1.4;
+        }
     </style>    
 </head>
 <body>
@@ -37,140 +90,97 @@
             <img src="./photo.jpg" alt="Shoupeng Ren" class="profile-picture">
             <div class="about-me-text">
                 <p>
-                    Hello 👋, I'm currently pursuing my Master's degree at Zhejiang University 
-                    under the supervision of <a href="https://jianliu.phd" target="_blank">Prof. Jian Liu</a>.
-                    Prior to this, I earned my Bachelor's degree from Wuhan University, 
-                    where I actively participated in CTF competitions as part of the team 
-                    <a href="https://ctftime.org/team/5386" target="_blank">DAWN</a> and <a href="https://ctftime.org/team/29641" target="_blank">SU</a>, 
-                    focusing on reverse engineering and Android security.
-                <p>After beginning my Master's studies, I shifted my focus to the emerging field of 
-                    <span style="font-size: 1.1em; font-weight: bold;">blockchain</span>, particularly 
-                    its <span style="font-size: 1.1em; font-weight: bold;">security</span> aspects. 
-                    <mark>I am eager to engage in innovative and impactful work, addressing 
-                    real-world challenges in this dynamic domain.</mark></p>
+                    Hello 👋, I am a Research Assistant at 
+                    <a href="https://www.polyu.edu.hk/" target="_blank">The Hong Kong Polytechnic University (PolyU)</a>, 
+                    and will begin my Ph.D. in August 2026 under 
+                    <a href="https://www4.comp.polyu.edu.hk/~csxluo/" target="_blank">Prof. Daniel Xiapu Luo</a>.
+                    I obtained my Master's degree in Cyberspace Security from Zhejiang University, 
+                    advised by <a href="https://jianliu.phd" target="_blank">Prof. Jian Liu</a>, 
+                    and my Bachelor's degree in Information Security from Wuhan University.
+                </p>
+                <p>
+                    Since beginning my Master's studies, my research has consistently focused on 
+                    <strong>blockchain</strong> and its <strong>security</strong>. 
+                    I am eager to engage in <em>innovative, impactful work</em> that addresses 
+                    <em>real-world challenges</em> in this domain.
+                </p>
             </div>
         </div>
     </section>
     <section>
         <h3>🎓 Education</h3>
         <ul>
-            <li><strong>Zhejiang University</strong> (2023 - Present)
+            <li><strong>The Hong Kong Polytechnic University</strong> (Incoming)
+                Ph.D. in Computing</li>
+            <li><strong>Zhejiang University</strong> (2023 - 2026)
                 Master's in Cyberspace Security</li>
             <li><strong>Wuhan University</strong> (2019 - 2023)
                 Bachelor's in Information Security</li>
         </ul>
     </section>
-    <section>
-        <h3>🧐 Research Journey</h3>
-        <p>
-            I have conducted research on several topics, including 
-            <strong>MEV</strong>, <strong>DeFi Security</strong>, and <strong>Scalability</strong>. 
-            However, as a novice researcher, coming up with great ideas can be challenging, 
-            while simpler ideas often demand quick realization to stay competitive, 
-            making tangible outcomes difficult to achieve. 🤣 <br>
-            <!-- So far, I have no published works, with two preprints still under submission. -->  
-        </p>
-        <ul>
+    <section class="research">
+        <h3>🔬 Research</h3>
+        <ul class="research-list">
             <li>
-                <a href="https://arxiv.org/pdf/2401.07261" target="_blank"><strong>LookAhead: Preventing DeFi Attacks via Unveiling Adversarial Contracts</strong></a>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.85em; font-style: italic;"><strong>Shoupeng Ren</strong>, Lipeng He, Tianyu Tu, Di Wu, Jian Liu, et al.</small></span>
-                <br>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.75em; font-family: 'Georgia', 'Times New Roman', serif; color: #555;">
-                    <strong>ACM International Conference on the Foundations of Software Engineering (FSE), 2025.</strong>
-                </span>
-                <br>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.9em;">
-                    This work addresses the growing challenge of attackers using private mempool services to conceal their adversary transactions. 
-                    By analyzing the features of DeFi attacks, we propose a method for detecting adversarial smart contracts,
-                    offering a new direction for real-time defense mechanism.   </span> 
+                <div class="research-title-line">
+                    <span class="paper-badge paper-badge-ccfa" title="CCF Class A">CCF A</span>
+                    <strong>LookAhead: Preventing DeFi Attacks via Unveiling Adversarial Contracts</strong>
+                    <a class="paper-link" href="https://arxiv.org/pdf/2401.07261" target="_blank" rel="noopener noreferrer">(Paper)</a>
+                    <a class="paper-link" href="https://github.com/zju-abclab/LookAhead" target="_blank" rel="noopener noreferrer">(Code)</a>
+                </div>
+                <p class="research-authors"><strong><u>Shoupeng Ren</u></strong>, Lipeng He, Tianyu Tu, Di Wu, Jian Liu, et al.</p>
+                <p class="research-venue">ACM International Conference on the Foundations of Software Engineering (FSE), 2025.</p>
             </li>
-            <li>  
-                <a href="https://eprint.iacr.org/2025/180" target="_blank"><strong>On the Atomicity and Efficiency of Blockchain Payment Channels</strong></a>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.85em; font-style: italic;">Di Wu, <strong>Shoupeng Ren</strong>, Yuman Bai, Lipeng He, Jian Liu, Wu Wen, Kui Ren, Chun Chen.</small></span>
-                <br>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.75em; font-family: 'Georgia', 'Times New Roman', serif; color: #555;">
-                    <strong>USENIX Security Symposium (USENIX Security), 2025.</strong>
-                </span>
-                <br>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.9em;">
-                    This work analyzes the inherent security risks in Lightning-style payment channels caused by non-atomic state transitions. 
-                    To address this issue, we propose a novel payment channel protocol that guarantees atomicity while significantly reducing latency.  
-                </span> 
+            <li>
+                <div class="research-title-line">
+                    <span class="paper-badge paper-badge-ccfa" title="CCF Class A">CCF A</span>
+                    <strong>On the Atomicity and Efficiency of Blockchain Payment Channels</strong>
+                    <a class="paper-link" href="https://eprint.iacr.org/2025/180" target="_blank" rel="noopener noreferrer">(Paper)</a>
+                    <a class="paper-link" href="https://github.com/zju-abclab/ultraviolet" target="_blank" rel="noopener noreferrer">(Code)</a>
+                </div>
+                <p class="research-authors">Di Wu, <strong><u>Shoupeng Ren</u></strong>, Yuman Bai, Lipeng He, Jian Liu, Wu Wen, Kui Ren, Chun Chen.</p>
+                <p class="research-venue">USENIX Security Symposium (USENIX Security), 2025.</p>
+            </li>
+            <li>
+                <div class="research-title-line">
+                    <span class="paper-badge paper-badge-preprint">Preprint</span>
+                    <strong>Ordering Power is Sanctioning Power: Sanction-Evasion MEV and the Limits of On-Chain Enforcement</strong>
+                    <a class="paper-link" href="https://arxiv.org/pdf/2603.27739" target="_blank" rel="noopener noreferrer">(Paper)</a>
+                </div>
+                <p class="research-authors">Di Wu, Yuman Bai, <strong><u>Shoupeng Ren</u></strong>, Xinyu Zhang, Yiyue Cao, Xuechao Wang, Wu Wen, Jian Liu.</p>
+                <p class="research-venue">arXiv preprint arXiv:2603.27739, 2026.</p>
             </li>
         </ul>
     </section>
-    <section>
-        <h3>🌱 OpenSource Projects</h3>
-        <ul>
-            <li>
-                <a href="https://github.com/SunWeb3Sec/DeFiHackLabs" target="_blank" style="display: inline-block; vertical-align: middle; font-weight: bold;">DeFiHackLabs</a>
-                <img src="https://img.shields.io/github/stars/SunWeb3Sec/DeFiHackLabs" alt="DeFiHackLabs Stars" style="display: inline-block; vertical-align: middle; height: 16px;"/>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.85em; font-style: italic;">Role: Core Contributor</span>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.9em;">
-                    A collection of PoC implementations for historical DeFi attacks, 
-                    serving as a valuable resource for learning and research.
-                </span>
-                </li>  
-            <li>
-                <a href="https://github.com/Autosaida/DeFiHackAnalysis" target="_blank" style="display: inline-block; vertical-align: middle; font-weight: bold;">DeFiHackAnalysis</a>
-                <img src="https://img.shields.io/github/stars/Autosaida/DeFiHackAnalysis" alt="DeFiHackAnalysis Stars" style="display: inline-block; vertical-align: middle; height: 16px;"/>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.85em; font-style: italic;">Role: Project Owner</span>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.9em;">
-                    A collection of personal analyses on historical DeFi incidents, 
-                    aiming to provide the clearest and most in-depth perspectives available.
-                </span>
-            </li>
-            <li>
-                <a href="https://github.com/Autosaida/Solidity-CTF-Workspace" target="_blank" style="display: inline-block; vertical-align: middle; font-weight: bold;">Solidity-CTF-Workspace</a>
-                <img src="https://img.shields.io/github/stars/Autosaida/Solidity-CTF-Workspace" alt="Solidity-CTF-Workspace Stars" style="display: inline-block; vertical-align: middle; height: 16px;"/>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.85em; font-style: italic;">Role: Project Owner</span>
-                <span style="display: inline-block; vertical-align: middle; font-size: 0.9em;">
-                    A Foundry-based repository showcasing my PoCs for selected Solidity CTF challenges.
-                </span>
-            </li>
-        </ul>
-    </section>
-    
-    
-    
+
 
     <section>
         <h3>✨ Awards & Honors</h3>
         <ul>
             <li>
-        <h5 style="margin-top: -0.5em; margin-bottom: 0em;"><strong>Web3 Bounties & Grants </strong></h5>
-        
+        <h5 style="margin-top: -0.5em; margin-bottom: 0em;"><strong>Academic Awards</strong></h5>
         <ul style="font-size: 0.9em; padding-left: 1em;">
-            <li>14 valid High/Medium bug reports on Code4rena and Sherlock</li>
-            <li>1st place in the mini hackathon, hosted by The Graph</li>
+            <li>Hong Kong PhD Fellowship Scheme (HKPFS), 2026</li>
+            <li>National Scholarship, Zhejiang University, 2025</li>
+            <li>Outstanding Graduate, Wuhan University, 2023</li>
+            <li>Huawei Scholarship, Wuhan University, 2022</li>
         </ul>
             </li>
             <li>
-        
         <h5 style="margin-top: -0.2em; margin-bottom: 0em;"><strong>Selected CTF Awards</strong></h5>
         <ul style="font-size: 0.9em; padding-left: 1em;">
             <li>9th place in EthernautCTF 2024 (w/ DeFiHackLabs)</li>
             <li>10th place in WMCTF 2023 (w/ SU)</li>
             <li>2nd prize in CISCN Final 2021 (w/ DAWN)</li>
         </ul>
-        
-    </li>
-    <li
-        <h5 style="margin-top: -0.2em; margin-bottom: 0em;"><strong>Academic Awards</strong></h5>
+            </li>
+            <li>
+        <h5 style="margin-top: -0.2em; margin-bottom: 0em;"><strong>Web3 Bounties & Grants</strong></h5>
         <ul style="font-size: 0.9em; padding-left: 1em;">
-            <li>National Scholarship, Zhejiang University, 2025</li>
-            <li>Outstanding Graduate, Wuhan University, 2023</li>
-            <li>Huawei Scholarship, Wuhan University, 2022</li>
+            <li>14 valid High/Medium bug reports on Code4rena and Sherlock</li>
+            <li>1st place in the mini hackathon, hosted by The Graph</li>
         </ul>
-        </li>
-    </ul>
-    </section>
-    
-
-    <section>
-        <h3>🔩 Work Experience</h3>
-        <ul>
-            <li><strong>Hillstone Networks</strong> - Security Research Intern (July 2020 - August 2020)
+            </li>
         </ul>
     </section>
 </body>
